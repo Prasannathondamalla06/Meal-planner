@@ -33,6 +33,11 @@ const showData = () => {
     alert("Please fill the detail.");
     return;
   }
+  if(height.value<=0 || weight.value<=0){
+    alert("fil positive number");
+    return;
+  }
+ 
   generate_meal_cart(bmr);
 };
 
@@ -76,6 +81,7 @@ async function generate_meal_cart(bmr) {
     .then((res) => res.json())
     .then((data) => {
       result = data;
+      
     });
     let mealTime = ["BREAKFAST", "LUNCH", "DINNER"];  
     let t = 0;
@@ -89,6 +95,7 @@ async function generate_meal_cart(bmr) {
       })
       .then((data) => {
         imgURL = data.image;
+        console.log(imgURL);
       });
 
 

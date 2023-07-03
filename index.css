@@ -4,16 +4,24 @@
      margin: 0; 
 }
 body{
-    background-color: rgba(239, 245, 201, 0.957);
-   
+    
+    background-image: url("berries.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    animation: move 60s;
+    
 }
+
+
 #heading{
-    background-color: violet;
+    background-color: red;
     font-size: 1.9rem;
     font-family: cursive;
     position: relative;
     padding: 10px;
     color:white;
+    text-align: center;
 }
 
 #information{
@@ -90,7 +98,7 @@ select {
      position: relative;
     bottom: -50px;
     
-    background-color: violet;
+    background-color: red;
     font-size: 20px;
     color: white;
     border: none;
@@ -244,4 +252,13 @@ h5{
         position: relative;
         top: -1rem;
     }
+  }
+  input:hover {
+    background-color: yellow;
+   
+  }
+  
+  select:hover {
+    background-color: yellow;
+    
   }
